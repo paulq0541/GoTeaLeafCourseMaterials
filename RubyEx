@@ -1,0 +1,39 @@
+array = [1,2, 3, 4, 5, 6, 7, 8, 9, 10]
+array.each do |arr|
+	puts arr
+	end
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+array.each do|arr|
+	puts arr if arr > 5
+	end
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+array.select do |a|
+	if (a % 2) != 0
+	puts a
+	end
+end
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+	array.push 11
+	array.unshift 0
+	puts array
+	array.pop
+	array << 3
+	puts array
+	array.uniq!
+	puts array
+puts nil
+# Hash is a collection of key value pairs whose indices are not necessarily numbers
+
+#hash_old = {"Book" => 10.00, "Toy" => 20.00, "Tool" => 35.00}
+#has_new = {"book": 10.00, "toy": 20.00, "tool": 35.00}
+
+puts nil
+h = {a:1, b:2, c:3, d:4}
+h[:e] = 5
+puts h
+h.delete_if{|k,v| v < 3.5}
+puts h
+puts
+# hash values can be arrays, but you cannot have an array of hashes. I stand corrected from your solution.  Thank you.  pq
+# ex of hash values as arrays is hash = {"book": 15, "toy": 20, [toy, books]}
+# Rails API does not appear to be compatible with IE 10
